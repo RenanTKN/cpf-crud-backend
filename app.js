@@ -144,7 +144,7 @@ const init = async () => {
     return res.json(removeUser);
   });
 
-  server.listen(PORT);
+  server.listen(process.env.PORT || PORT);
 };
 
 init();
